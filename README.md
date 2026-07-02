@@ -1,11 +1,65 @@
-# Weatherly — Full-stack Weather App (React + FastAPI)
+# Weather Dashboard
 
-A responsive weather dashboard with search suggestions, server-side fetching/caching (Python/FastAPI), and a modern React UI (Vite + Chart.js). Uses Open‑Meteo (no API key).
+A full-stack weather application developed using React and FastAPI that provides real-time weather information through an intuitive and responsive interface.
 
-Project structure
-- backend/        -> FastAPI app (runs on port 8000)
-- frontend/       -> React + Vite app (runs on port 5173)
+## Features
 
-Quick start
+- Real-time weather search
+- Current weather conditions
+- Hourly forecast visualization
+- Responsive UI
+- FastAPI backend
+- React frontend
+- API integration
 
-1) Backend
+## Tech Stack
+
+Frontend
+- React
+- JavaScript
+- CSS
+
+Backend
+- FastAPI
+- Python
+- Uvicorn
+
+## Installation
+
+### Backend
+
+cd backend
+
+pip install -r requirements.txt
+
+uvicorn app.main:app --reload
+
+### Frontend
+
+cd frontend
+
+npm install
+
+npm run dev
+
+## Project Structure
+
+backend/
+frontend/
+
+## Future Improvements
+
+- 7-day forecast
+- Air Quality Index
+- Weather maps
+- Favorite cities
+- Dark mode
+- User authentication
+
+## Screenshots
+
+(Add screenshots here)
+
+## Acknowledgements
+
+This project uses publicly available weather APIs.
