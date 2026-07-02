@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Weather Dashboard</title>
+  <link rel="stylesheet" href="styles.css" />
+  <!-- Chart.js from CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <main class="container">
+    <h1>Weather Dashboard</h1>
+
+    <form id="search-form" class="search">
+      <input id="city-input" type="search" placeholder="Enter city (e.g., London)" required />
+      <button type="submit">Search</button>
+    </form>
+
+    <section id="current" class="card hidden">
+      <h2 id="place">—</h2>
+      <div class="current-grid">
+        <div>
+          <p class="label">Temperature</p>
+          <p id="temp" class="large">— °C</p>
+        </div>
+        <div>
+          <p class="label">Wind</p>
+          <p id="wind">— m/s</p>
+        </div>
+        <div>
+          <p class="label">Conditions</p>
+          <p id="conditions">—</p>
+        </div>
+        <div>
+          <p class="label">Time (local)</p>
+          <p id="time">—</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="forecast" class="card hidden">
+      <h3>Next 24 hours</h3>
+      <canvas id="tempChart" height="120"></canvas>
+    </section>
+
+    <p id="message" class="message"></p>
+  </main>
+
+  <script src="app.js"></script>
+</body>
+</html>
